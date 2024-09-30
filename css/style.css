@@ -1,0 +1,28 @@
+body {
+    display: block;
+    margin: 0px;
+
+}
+
+
+.topSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: aqua;
+}
+
+.bottomSection {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: pink;
+
+}
+
+
+#buttonPlay, #buttonStop, #displayTime{
+    margin: 20px;
+    padding: 20px;
+}
