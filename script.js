@@ -12,30 +12,57 @@ const button11 = document.getElementById("button11");
 const button12 = document.getElementById("button12");
 const buttonPlay = document.getElementById("buttonPlay");
 const buttonStop = document.getElementById("buttonStop");
+const mainImage = document.getElementById("mainImage");
 
 let time = 0;
-const audioTrack = new Audio(".audio/softPiano.mp3");
+let audioTrack = new Audio()
+let currentCard = button1;
+let previousCard = null;
+if(localStorage.getItem("currentTrack") == null) {
 
-let audioElement = {
-    
-    image: "softPiano.jpg",
-    audio: ".audio/softPiano.mp3",
-    altText: "Person playing a piano",
-    currentCard: 1,
-    previousCard: null,
 
-    reasign: function(newImage, newAudio, newAltText, newCurrentCard){
-        this.image = newImage;
-        this.audio = newAudio;
-        this.altText = newAltText;
-        this.previousCard = this.currentCard;
-        this.currentCard = newCurrentCard;
-    }
+    localStorage.setItem("image", "./images/softPiano.jpg");
+    localStorage.setItem("audio", "./audio/softPiano.mp3");
+    localStorage.setItem("altText", "Person playing a piano");
+    localStorage.setItem("currentCard", "button1");
+    localStorage.setItem("previousCard", null);
+    audioTrack.setAttribute("src", localStorage.getItem("audio"));
 
-};
+    console.log("audioTrack:" + audioTrack.getAttribute("src"));
+
+} else {
+    audioTrack.setAttribute("src", localStorage.getItem("audio"));
+    currentCard = document.getElementById(localStorage.getItem("currentCard"));
+    changeImage();
+}
+
+function reasign(newImage, newAudio, newAltText, newCurrentCard){
+    localStorage.setItem("image", newImage);
+    localStorage.setItem("audio", newAudio);
+    localStorage.setItem("altText", newAltText);
+    localStorage.setItem("previousCard", currentCard);
+    localStorage.setItem("currentCard", newCurrentCard)
+    currentCard = newCurrentCard;
+    audioTrack.setAttribute("src", localStorage.getItem("audio"));
+}
+
 
 button1.addEventListener("click", function() {
-    audioElement.reasign("softPiano.jpg", new Audio("Audio/softPiano.mp3"), "Person playing a piano", 1);
-    
+    reasign("./images/softPiano.jpg","./audio/softPiano.mp3", "Person playing a piano", button1);
+    audioTrack.play();
+    changeImage();
+});
+buttonPlay.addEventListener("click", function() {
+    audioTrack.stop();
     audioTrack.play();
 });
+buttonStop.addEventListener("click", function (){
+    audioTrack.stop();
+});
+
+function changeImage (){
+    mainImage.setAttribute("src", localStorage.getItem("image"));
+    previousCard.setAttribute("border-color", "black");
+    currentCard.style.borderColor = "red";
+    mainImage.setAttribute("alt", localStorage.getItem("altText"));
+}
