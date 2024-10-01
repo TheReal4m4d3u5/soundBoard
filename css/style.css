@@ -5,15 +5,27 @@ body {
 
 img {
     width: 350px;
+    border: 2px solid #092b46;
+    border-radius: 8px;
+    padding: 10PX;
+    background-color: #092b46;
 }
 
-#topSection{
-
-    border-bottom-style: solid;
-    border-left-style: none;
-    border-right-style: none;
-    border-top-style: none;
+button {
+    border: 2px NONE #092b46;
+    border-radius: 8px;
+    background-color: #4c7273;
+   
 }
+
+
+
+
+main{
+    
+    background: #86b9b0;
+}
+
 
 #topSection{
 
@@ -24,15 +36,16 @@ img {
 }
 
 
-#rightSection {
-
-    border-left-style: solid;
-    border-right-style: solid;
-}
-
 #card {
     margin: 20px;
     padding: 20px;    
+}
+
+#buttonPlay, #buttonStop {
+
+    border: 2px solid #092b46;
+    border-radius: 8px;
+    background-color: #d0d6d6;
 }
 
 
@@ -46,53 +59,6 @@ img {
     border-color: red;
 }
 
-.orangeBoarder {
-
-    border-color: rgb(255, 174, 0);
-}
-
-.yellowBoarder {
-
-    border-color: rgb(255, 196, 0);
-}
-
-.greenBoarder {
-
-    border-color: rgb(136, 255, 0);
-}
-
-.aquaBoarder {
-
-    border-color: rgb(0, 255, 221);
-}
-
-.blueBoarder {
-
-    border-color: rgb(0, 132, 255);
-}
-
-.redBoarder {
-
-    border-color: red;
-}
-
-.redBoarder {
-
-    border-color: red;
-}
-
-.redBoarder {
-
-    border-color: red;
-}
-
-.redBoarder {
-
-    border-color: red;
-}
-
-
-
 .container-fluid {
     padding-right: 0px;
     padding-left: 0px;
@@ -102,8 +68,15 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: aqua;
-    border-style: solid
+    background-color: #4c7273;
+    border-style: solid;
+    
+    border: 2px solid #092b46;
+    border-radius: 8px;
+
+    margin: 20px;
+    margin-top: 0px;;
+    
 }
 
 .box {
