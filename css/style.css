@@ -1,24 +1,32 @@
 body {
     display: block;
     margin: 0px;
+}
 
+img {
+    width: 350px;
 }
 
 
-.topSection {
+#topSection {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: aqua;
 }
 
-.bottomSection {
-
+#bottomSection {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: pink;
+    /* width: 2000px;
+    padding: 500px; */
+}
 
+#card {
+    margin: 20px;
+    padding: 20px;    
 }
 
 
@@ -26,3 +34,25 @@ body {
     margin: 20px;
     padding: 20px;
 }
+
+
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.myContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: aqua;
+    border-style: solid
+}
+
+.box {
+
+    width: 250px;
+    height: 250px;
+    
+}
+
