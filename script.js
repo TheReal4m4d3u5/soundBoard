@@ -28,7 +28,7 @@ if(localStorage.getItem("currentTrack") == null) {
     localStorage.setItem("previousCard", null);
     audioTrack.setAttribute("src", localStorage.getItem("audio"));
 
-    console.log("audioTrack:" + audioTrack.getAttribute("src"));
+    //console.log("audioTrack:" + audioTrack.getAttribute("src"));
 
 } else {
     audioTrack.setAttribute("src", localStorage.getItem("audio"));
@@ -42,6 +42,7 @@ function reasign(newImage, newAudio, newAltText, newCurrentCard){
     localStorage.setItem("altText", newAltText);
     localStorage.setItem("previousCard", currentCard);
     localStorage.setItem("currentCard", newCurrentCard)
+    previousCard = currentCard;
     currentCard = newCurrentCard;
     audioTrack.setAttribute("src", localStorage.getItem("audio"));
 }
@@ -49,20 +50,112 @@ function reasign(newImage, newAudio, newAltText, newCurrentCard){
 
 button1.addEventListener("click", function() {
     reasign("./images/softPiano.jpg","./audio/softPiano.mp3", "Person playing a piano", button1);
+    audioTrack.pause();
+    audioTrack.currentTime = 0;
     audioTrack.play();
     changeImage();
 });
+
+button2.addEventListener("click", function() {
+    reasign("./images/typing.png","./audio/typing.mp3", "Typing on a laptop", button2);
+    audioTrack.pause();
+    audioTrack.currentTime = 0;
+    audioTrack.play();
+    changeImage();
+});
+
+button3.addEventListener("click", function() {
+    reasign("./images/applause.png","./audio/applause.mp3", "Hands clapping", button3);
+    audioTrack.pause();
+    audioTrack.currentTime = 0;
+    audioTrack.play();
+    changeImage();
+});
+
+button4.addEventListener("click", function() {
+    reasign("./images/heart.jpg","./audio/heart.mp3", "Human heart", button4);
+    audioTrack.pause();
+    audioTrack.currentTime = 0;
+    audioTrack.play();
+    changeImage();
+});
+
+button5.addEventListener("click", function() {
+    reasign("./images/sunrise.jpg","./audio/sunrise.mp3", "Sun setting on a lake", button5);
+    audioTrack.pause();
+    audioTrack.currentTime = 0;
+    audioTrack.play();
+    changeImage();
+});
+
+button6.addEventListener("click", function() {
+    reasign("./images/police.jpg","./audio/police.mp3", "Police car", button6);
+    audioTrack.pause();
+    audioTrack.currentTime = 0;
+    audioTrack.play();
+    changeImage();
+});
+
+button7.addEventListener("click", function() {
+    reasign("./images/crystal.jpg","./audio/crystal.mp3", "Blue crystal", button7);
+    audioTrack.pause();
+    audioTrack.currentTime = 0;
+    audioTrack.play();
+    changeImage();
+});
+
+button8.addEventListener("click", function() {
+    reasign("./images/thunder.jpg","./audio/thunder.mp3", "Lightning in a storm", button8);
+    audioTrack.pause();
+    audioTrack.currentTime = 0;
+    audioTrack.play();
+    changeImage();
+});
+
+button9.addEventListener("click", function() {
+    reasign("./images/techPiano.jpg","./audio/techPiano.mp3", "Clear piano", button9);
+    audioTrack.pause();
+    audioTrack.currentTime = 0;
+    audioTrack.play();
+    changeImage();
+});
+
+button10.addEventListener("click", function() {
+    reasign("./images/helicopter.jpg","./audio/helicopter.mp3", "Helicopter flying", button10);
+    audioTrack.pause();
+    audioTrack.currentTime = 0;
+    audioTrack.play();
+    changeImage();
+});
+
+button11.addEventListener("click", function() {
+    reasign("./images/deepOcean.jpg","./audio/deepOcean.mp3", "Jellyfish", button11);
+    audioTrack.pause();
+    audioTrack.currentTime = 0;
+    audioTrack.play();
+    changeImage();
+});
+
+button12.addEventListener("click", function() {
+    reasign("./images/explosion.jpg","./audio/explosion.mp3", "Nuclear bomb mushroom cloud", button12);
+    audioTrack.pause();
+    audioTrack.currentTime = 0;
+    audioTrack.play();
+    changeImage();
+});
+
 buttonPlay.addEventListener("click", function() {
-    audioTrack.stop();
+    audioTrack.pause();
     audioTrack.play();
 });
 buttonStop.addEventListener("click", function (){
-    audioTrack.stop();
+    audioTrack.pause();
+    audioTrack.currentTime = 0;
 });
 
 function changeImage (){
     mainImage.setAttribute("src", localStorage.getItem("image"));
     previousCard.setAttribute("border-color", "black");
-    currentCard.style.borderColor = "red";
+    currentCard.setAttribute("borderColor", "red");
     mainImage.setAttribute("alt", localStorage.getItem("altText"));
 }
