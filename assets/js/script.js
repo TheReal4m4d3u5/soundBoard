@@ -22,8 +22,8 @@ let previousCard = button1;
 if(localStorage.getItem("audio") == null) {
 
 
-    localStorage.setItem("image", "./images/softPiano.jpg");
-    localStorage.setItem("audio", "./audio/softPiano.mp3");
+    localStorage.setItem("image", "./assets/images/softPiano.jpg");
+    localStorage.setItem("audio", "./assets/audio/softPiano.mp3");
     localStorage.setItem("altText", "Person playing a piano");
     localStorage.setItem("currentCard", "button1");
     localStorage.setItem("previousCard", "button1");
@@ -57,7 +57,7 @@ function reasign(newImage, newAudio, newAltText, newCurrentCard){
 
 
 button1.addEventListener("click", function() {
-    reasign("./images/softPiano.jpg","./audio/softPiano.mp3", "Person playing a piano", "button1");
+    reasign("./assets/images/softPiano.jpg","./assets/audio/softPiano.mp3", "Person playing a piano", "button1");
     audioTrack.pause();
     audioTrack.currentTime = 0;
     audioTrack.play();
@@ -65,7 +65,7 @@ button1.addEventListener("click", function() {
 });
 
 button2.addEventListener("click", function() {
-    reasign("./images/typing.png","./audio/typing.mp3", "Typing on a laptop", "button2");
+    reasign("./assets/images/typing.png","./assets/audio/typing.mp3", "Typing on a laptop", "button2");
     audioTrack.pause();
     audioTrack.currentTime = 0;
     audioTrack.play();
@@ -73,7 +73,7 @@ button2.addEventListener("click", function() {
 });
 
 button3.addEventListener("click", function() {
-    reasign("./images/applause.png","./audio/applause.mp3", "Hands clapping", "button3");
+    reasign("./assets/images/applause.png","./assets/audio/applause.mp3", "Hands clapping", "button3");
     audioTrack.pause();
     audioTrack.currentTime = 0;
     audioTrack.play();
@@ -81,7 +81,7 @@ button3.addEventListener("click", function() {
 });
 
 button4.addEventListener("click", function() {
-    reasign("./images/heart.jpg","./audio/heart.mp3", "Human heart", "button4");
+    reasign("./assets/images/heart.jpg","./assets/audio/heart.mp3", "Human heart", "button4");
     audioTrack.pause();
     audioTrack.currentTime = 0;
     audioTrack.play();
@@ -89,7 +89,7 @@ button4.addEventListener("click", function() {
 });
 
 button5.addEventListener("click", function() {
-    reasign("./images/sunrise.jpg","./audio/sunrise.mp3", "Sun setting on a lake", "button5");
+    reasign("./assets/images/sunrise.jpg","./assets/audio/sunrise.mp3", "Sun setting on a lake", "button5");
     audioTrack.pause();
     audioTrack.currentTime = 0;
     audioTrack.play();
@@ -97,7 +97,7 @@ button5.addEventListener("click", function() {
 });
 
 button6.addEventListener("click", function() {
-    reasign("./images/police.jpg","./audio/police.mp3", "Police car", "button6");
+    reasign("./assets/images/police.jpg","./assets/audio/police.mp3", "Police car", "button6");
     audioTrack.pause();
     audioTrack.currentTime = 0;
     audioTrack.play();
@@ -105,7 +105,7 @@ button6.addEventListener("click", function() {
 });
 
 button7.addEventListener("click", function() {
-    reasign("./images/crystal.jpg","./audio/crystal.mp3", "Blue crystal", "button7");
+    reasign("./assets/images/crystal.jpg","./assets/audio/crystal.mp3", "Blue crystal", "button7");
     audioTrack.pause();
     audioTrack.currentTime = 0;
     audioTrack.play();
@@ -113,7 +113,7 @@ button7.addEventListener("click", function() {
 });
 
 button8.addEventListener("click", function() {
-    reasign("./images/thunder.jpg","./audio/thunder.mp3", "Lightning in a storm", "button8");
+    reasign("./assets/images/thunder.jpg","./assets/audio/thunder.mp3", "Lightning in a storm", "button8");
     audioTrack.pause();
     audioTrack.currentTime = 0;
     audioTrack.play();
@@ -121,7 +121,7 @@ button8.addEventListener("click", function() {
 });
 
 button9.addEventListener("click", function() {
-    reasign("./images/techPiano.jpg","./audio/techPiano.mp3", "Clear piano", "button9");
+    reasign("./assets/images/techPiano.jpg","./assets/audio/techPiano.mp3", "Clear piano", "button9");
     audioTrack.pause();
     audioTrack.currentTime = 0;
     audioTrack.play();
@@ -129,7 +129,7 @@ button9.addEventListener("click", function() {
 });
 
 button10.addEventListener("click", function() {
-    reasign("./images/helicopter.jpg","./audio/helicopter.mp3", "Helicopter flying", "button10");
+    reasign("./assets/images/helicopter.jpg","./assets/audio/helicopter.mp3", "Helicopter flying", "button10");
     audioTrack.pause();
     audioTrack.currentTime = 0;
     audioTrack.play();
@@ -137,7 +137,7 @@ button10.addEventListener("click", function() {
 });
 
 button11.addEventListener("click", function() {
-    reasign("./images/deepOcean.jpg","./audio/deepOcean.mp3", "Jellyfish", "button11");
+    reasign("./assets/images/deepOcean.jpg","./assets/audio/deepOcean.mp3", "Jellyfish", "button11");
     audioTrack.pause();
     audioTrack.currentTime = 0;
     audioTrack.play();
@@ -145,7 +145,7 @@ button11.addEventListener("click", function() {
 });
 
 button12.addEventListener("click", function() {
-    reasign("./images/explosion.jpg","./audio/explosion.mp3", "Nuclear bomb mushroom cloud", "button12");
+    reasign("./assets/images/explosion.jpg","./assets/audio/explosion.mp3", "Nuclear bomb mushroom cloud", "button12");
     audioTrack.pause();
     audioTrack.currentTime = 0;
     audioTrack.play();
