@@ -158,8 +158,10 @@ buttonStop.addEventListener("click", function (){
 function changeImage (){
     
     //console.log(currentCard.getAttribute("border-color"));
-    let currentImage = document.querySelector(`img[src='${localStorage.getItem("image")}']`);
+    
+    let currentImage = document.querySelector(`.cardImage[src='${localStorage.getItem("image")}']`);
     let images = document.querySelectorAll('img')
+    
     images.forEach(img => img.style.backgroundColor = "#092b46")
     mainImage.setAttribute("src", localStorage.getItem("image"));
     currentImage.style.backgroundColor = "red";
