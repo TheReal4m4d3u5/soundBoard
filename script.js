@@ -27,7 +27,7 @@ if(localStorage.getItem("audio") == null) {
     localStorage.setItem("currentCard", "button1");
     localStorage.setItem("previousCard", "button1");
     audioTrack.setAttribute("src", localStorage.getItem("audio"));
-    
+    changeImage();
     //console.log("audioTrack:" + audioTrack.getAttribute("src"));
 
 } else {
@@ -160,7 +160,7 @@ function changeImage (){
     //console.log(currentCard.getAttribute("border-color"));
     let currentImage = document.querySelector(`img[src='${localStorage.getItem("image")}']`);
     let images = document.querySelectorAll('img')
-    images.forEach(img => img.style.backgroundColor = "black")
+    images.forEach(img => img.style.backgroundColor = "#092b46")
     mainImage.setAttribute("src", localStorage.getItem("image"));
     currentImage.style.backgroundColor = "red";
     mainImage.setAttribute("alt", localStorage.getItem("altText"));
