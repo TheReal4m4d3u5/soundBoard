@@ -13,6 +13,7 @@ const button12 = document.getElementById("button12");
 const buttonPlay = document.getElementById("buttonPlay");
 const buttonStop = document.getElementById("buttonStop");
 const mainImage = document.getElementById("mainImage");
+const timeDisplay = document.getElementById("displayTime");
 
 let time = 0;
 let audioTrack = new Audio()
@@ -36,6 +37,11 @@ if(localStorage.getItem("audio") == null) {
     currentCard = document.getElementById(localStorage.getItem("currentCard"));
     //console.log(document.getElementById(localStorage.getItem("currentCard")));
     changeImage();
+}
+const timer = setInterval(setTime, 500);
+
+function setTime(){
+    timeDisplay.textContent = `Time: ${Math.floor(audioTrack.currentTime)} seconds`;
 }
 
 function reasign(newImage, newAudio, newAltText, newCurrentCard){
@@ -158,7 +164,7 @@ buttonStop.addEventListener("click", function (){
 function changeImage (){
     
     //console.log(currentCard.getAttribute("border-color"));
-    
+
     let currentImage = document.querySelector(`.cardImage[src='${localStorage.getItem("image")}']`);
     let images = document.querySelectorAll('img')
     
