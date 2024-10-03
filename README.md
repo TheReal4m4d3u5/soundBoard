@@ -54,12 +54,16 @@ This project is a media player that we built to reinforce our knowledge of git, 
 
     Avery Jacobson
     Devan Ballantine
-    
+
 ## Installation
 
 N/A
 
 ## Usage
+
+Close modal
+
+![ScreenShot](./assets/images/closeModal.png)
 
 Stop audio file
 
@@ -200,5 +204,8 @@ put text here
 
 Devan Ballantine
 
-put text here
+Hello this is Devan. At the time of writing this I'm currently a student at the University of Minnesota. I made this with my amazing partner Avery Jacobson. I knew how git worked before starting this project but this project really helped me understand both its importance and how the aproval to merge process works. I gained knowledge in how to play and manipulate audio objects in Java Script and am excited to see where my next project takes me.
+
+
+Thanks for reading our ReadMe
 
