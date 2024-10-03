@@ -85,5 +85,8 @@ main{
     height: 250px;
 }
 
+#currentSong {
+    text-align: center;
+}
 
 

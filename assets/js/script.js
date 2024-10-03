@@ -14,6 +14,7 @@ const buttonPlay = document.getElementById("buttonPlay");
 const buttonStop = document.getElementById("buttonStop");
 const mainImage = document.getElementById("mainImage");
 const timeDisplay = document.getElementById("displayTime");
+const currentDescription = document.getElementById("currentSong");
 
 let time = 0;
 let audioTrack = new Audio()
@@ -27,8 +28,10 @@ if(localStorage.getItem("audio") == null) {
     localStorage.setItem("altText", "Person playing a piano");
     localStorage.setItem("currentCard", "button1");
     localStorage.setItem("previousCard", "button1");
+    localStorage.setItem("currentDescription", "Piano");
     audioTrack.setAttribute("src", localStorage.getItem("audio"));
     changeImage();
+    changeText();
     //console.log("audioTrack:" + audioTrack.getAttribute("src"));
 
 } else {
@@ -37,6 +40,7 @@ if(localStorage.getItem("audio") == null) {
     currentCard = document.getElementById(localStorage.getItem("currentCard"));
     //console.log(document.getElementById(localStorage.getItem("currentCard")));
     changeImage();
+    changeText();
 }
 const timer = setInterval(setTime, 500);
 
@@ -172,4 +176,9 @@ function changeImage (){
     mainImage.setAttribute("src", localStorage.getItem("image"));
     currentImage.style.backgroundColor = "red";
     mainImage.setAttribute("alt", localStorage.getItem("altText"));
+}
+
+function changeText(){
+    let text = localStorage.getItem("currentDescription");
+    currentDescription.innerHTML = text;  
 }
