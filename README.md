@@ -2,13 +2,6 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
-
 - This project executes developer practices and habits in creating an application with accompanied relevant documentation. It is our motivation that we want to improve our skills as developers so that we can expand our professional abilies. In building this project we can learn best practices and optimize my skills as a professional while understanding new 
 developer tools such as html, css, javascript and github. This project creates a web page that has a set of audio files with associated images that are able to play when the user clicks on one of the images with one audio file and image pre loaded. 
 
@@ -16,6 +9,8 @@ developer tools such as html, css, javascript and github. This project creates a
 In doing this project I have learned how to think like a developer and practice developer habits by learning how to set up a web development project and how to track my changes and development in a version tracking tool. I followed a process of creating and closing issues in github and creating documentation for my application. There were a number of tech stacks that were used in this project such as html-HTML, CSS and Javascript. Github was used for the version control tool which has all the branch repositories, open and closed issues, and logs to saved changes. It also includes a professional readme, showing installation of my app, how to use it, license, features, how to contribute and how to test the application.  
 
 Throught this project I learned professional practices and habits, new technologies and how to deploy my app and made app live on the internet for everyone to see and contribute to.  
+
+This project is a media player that we built to reinforce our knowledge of git, HTML, CSS, and Java Script. It is reactive to different screen sizes and to user input. This project allows users to play commonly used sound effects. 
 
 
 ## Table of Contents 
@@ -190,7 +185,7 @@ And image is shown in the main image
 
 Given a user has launched the url is a mobile browser
 When the user lands on the webpage
-Then the UI should be able to be dynamic, flexable, and Reactive without defects 
+Then the UI should be able to be dynamic, flexable, and reactive without defects 
 
 
 
