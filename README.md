@@ -12,6 +12,9 @@ Throught this project I learned professional practices and habits, new technolog
 
 This project is a media player that we built to reinforce our knowledge of git, HTML, CSS, and Java Script. It is reactive to different screen sizes and to user input. This project allows users to play commonly used sound effects. 
 
+## link to soundboard
+
+https://thereal4m4d3u5.github.io/soundBoard/
 
 ## Table of Contents 
 

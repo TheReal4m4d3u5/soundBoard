@@ -16,41 +16,42 @@ const buttonStop = document.getElementById("buttonStop");
 const mainImage = document.getElementById("mainImage");
 const timeDisplay = document.getElementById("displayTime");
 const currentDescription = document.getElementById("currentSong");
+// created all the needed HTML Element objects for event listners and display zones
 
 let time = 0;
-let audioTrack = new Audio()
+let audioTrack = new Audio() //created a new audio object
 let currentCard = button1;
 let previousCard = button1;
-if(localStorage.getItem("audio") == null) {
+if(localStorage.getItem("audio") == null) { //if no audio is in local storage load default: softPiano
 
 
-    localStorage.setItem("image", "./assets/images/softPiano.jpg");
+    localStorage.setItem("image", "./assets/images/softPiano.jpg"); //sets to local storage
     localStorage.setItem("audio", "./assets/audio/softPiano.mp3");
     localStorage.setItem("altText", "Person playing a piano");
     localStorage.setItem("currentCard", "button1");
     localStorage.setItem("previousCard", "button1");
     localStorage.setItem("currentDescription", "Piano");
-    audioTrack.setAttribute("src", localStorage.getItem("audio"));
-    changeImage();
+    audioTrack.setAttribute("src", localStorage.getItem("audio")); //sets the audio in audio track to the default that was just set to local storage
+    changeImage(); //sets the main image to softPiano and sets the border in the lower image to softPiano
     changeText();
-    //console.log("audioTrack:" + audioTrack.getAttribute("src"));
+    //console.log("audioTrack:" + audioTrack.getAttribute("src"));  old debug test
 
-} else {
+} else { //runs if there was audio in local storage
 
-    audioTrack.setAttribute("src", localStorage.getItem("audio"));
-    currentCard = document.getElementById(localStorage.getItem("currentCard"));
+    audioTrack.setAttribute("src", localStorage.getItem("audio")); //sets the audio in audio track to the audio in local storage
+    currentCard = document.getElementById(localStorage.getItem("currentCard")); // tells us what card in the lower section correlates to the audio in local storage
     //console.log(document.getElementById(localStorage.getItem("currentCard")));
     changeImage();
     changeText();
 }
-const timer = setInterval(setTime, 500);
+const timer = setInterval(setTime, 500); // runs setTime every half second
 
 function setTime(){
-    timeDisplay.textContent = `Time: ${Math.floor(audioTrack.currentTime)} seconds`;
+    timeDisplay.textContent = `Time: ${Math.floor(audioTrack.currentTime)} seconds`; //updates the time display to the current track time
 }
 
-function reasign(newImage, newAudio, newAltText, newCurrentCard, currentDescription){
-    localStorage.setItem("image", newImage);
+function reasign(newImage, newAudio, newAltText, newCurrentCard, currentDescription){ //reasigns all variables in local storage then updates previous/current card. then sets the audio
+    localStorage.setItem("image", newImage); 
     localStorage.setItem("audio", newAudio);
     localStorage.setItem("altText", newAltText);
     //localStorage.setItem("previousCard", currentCard);
