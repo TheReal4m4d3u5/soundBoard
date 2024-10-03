@@ -96,3 +96,7 @@ main{
     text-align: center;
 }
 
+#about{
+    position: relative;
+    left: 95%;
+}

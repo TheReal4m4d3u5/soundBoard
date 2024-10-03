@@ -16,6 +16,9 @@ const buttonStop = document.getElementById("buttonStop");
 const mainImage = document.getElementById("mainImage");
 const timeDisplay = document.getElementById("displayTime");
 const currentDescription = document.getElementById("currentSong");
+const about = document.getElementById("about");
+
+
 // created all the needed HTML Element objects for event listners and display zones
 
 let time = 0; // does nothing just a relic of devlopment
@@ -61,6 +64,10 @@ function reasign(newImage, newAudio, newAltText, newCurrentCard, currentDescript
     currentCard = document.getElementById(newCurrentCard);
     audioTrack.setAttribute("src", localStorage.getItem("audio"));
 }
+
+about.addEventListener("click", function() {
+    $("#myModal").modal('show');
+});
 
 
 button1.addEventListener("click", function() {
