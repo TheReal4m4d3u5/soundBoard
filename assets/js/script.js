@@ -11,6 +11,7 @@ const button10 = document.getElementById("button10");
 const button11 = document.getElementById("button11");
 const button12 = document.getElementById("button12");
 const buttonPlay = document.getElementById("buttonPlay");
+const buttonPause = document.getElementById("buttonPause");
 const buttonStop = document.getElementById("buttonStop");
 const mainImage = document.getElementById("mainImage");
 const timeDisplay = document.getElementById("displayTime");
@@ -173,6 +174,11 @@ buttonPlay.addEventListener("click", function() {
     audioTrack.pause();
     audioTrack.play();
 });
+
+buttonPause.addEventListener("click", function(){
+    audioTrack.pause();
+});
+
 buttonStop.addEventListener("click", function (){
     audioTrack.pause();
     audioTrack.currentTime = 0;
