@@ -1,6 +1,9 @@
 body {
-    display: block;
+
     margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
 }
 
 /* formating for all img elements */
@@ -34,6 +37,12 @@ main{
     border-top-style: solid;
 }
 
+#bottomSection{
+    margin-bottom: 0px;
+}
+
+
+
 /* formatting for cards that are buttons and images */
 #card {
     margin: 20px;
@@ -41,7 +50,7 @@ main{
 }
 
 /* formatting for play, pause, stop buttons */
-#buttonPlay, #buttonStop, #buttonPause {
+#buttonPlay, #buttonStop, #buttonPause, #about {
 
     border: 2px solid #092b46;
     border-radius: 8px;
@@ -94,5 +103,11 @@ main{
 /* centers modal header text */
 .modal-title{
     text-align: center;
+}
+
+#aboutBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
 }
 
