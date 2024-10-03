@@ -179,7 +179,6 @@ function changeImage (){
 }
 
 function changeText(){
-    console.log("currentDescription.textContent: " + currentDescription.textContent);
     let text = localStorage.getItem("currentDescription");
     currentDescription.innerHTML = text;  
 }
