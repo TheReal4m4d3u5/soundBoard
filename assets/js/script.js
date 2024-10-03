@@ -18,7 +18,7 @@ const timeDisplay = document.getElementById("displayTime");
 const currentDescription = document.getElementById("currentSong");
 // created all the needed HTML Element objects for event listners and display zones
 
-let time = 0;
+let time = 0; // does nothing just a relic of devlopment
 let audioTrack = new Audio() //created a new audio object
 let currentCard = button1;
 let previousCard = button1;
@@ -64,17 +64,18 @@ function reasign(newImage, newAudio, newAltText, newCurrentCard, currentDescript
 
 
 button1.addEventListener("click", function() {
-    reasign("./assets/images/softPiano.jpg","./assets/audio/softPiano.mp3", "Person playing a piano", "button1", "Piano");
-    audioTrack.pause();
-    audioTrack.currentTime = 0;
-    audioTrack.play();
-    changeImage();
-    changeText();
+    reasign("./assets/images/softPiano.jpg","./assets/audio/softPiano.mp3", "Person playing a piano", "button1", "Piano"); //calls reasign to set variables to this buttons
+    audioTrack.pause(); //pauses the audio
+    audioTrack.currentTime = 0; //sets audio to begining for reasignment
+    audioTrack.play(); //plays new audio
+    changeImage();// updates what image is highlighted and what image is displayed in main image
+    changeText();// sets the text under main image to be the new text
+    //these comments apply to all button 1 - 12 event listeners
 });
 
 button2.addEventListener("click", function() {
-    reasign("./assets/images/typing.png","./assets/audio/typing.mp3", "Typing on a laptop", "button2", "Typing");
-    audioTrack.pause();
+    reasign("./assets/images/typing.png","./assets/audio/typing.mp3", "Typing on a laptop", "button2", "Typing");//calls reasign to set variables to this buttons
+    audioTrack.pause(); 
     audioTrack.currentTime = 0;
     audioTrack.play();
     changeImage();
@@ -82,7 +83,7 @@ button2.addEventListener("click", function() {
 });
 
 button3.addEventListener("click", function() {
-    reasign("./assets/images/applause.png","./assets/audio/applause.mp3", "Hands clapping", "button3", "Clapping");
+    reasign("./assets/images/applause.png","./assets/audio/applause.mp3", "Hands clapping", "button3", "Clapping");//calls reasign to set variables to this buttons
     audioTrack.pause();
     audioTrack.currentTime = 0;
     audioTrack.play();
@@ -91,7 +92,7 @@ button3.addEventListener("click", function() {
 });
 
 button4.addEventListener("click", function() {
-    reasign("./assets/images/heart.jpg","./assets/audio/heart.mp3", "Human heart", "button4", "Heart Beating");
+    reasign("./assets/images/heart.jpg","./assets/audio/heart.mp3", "Human heart", "button4", "Heart Beating");//calls reasign to set variables to this buttons
     audioTrack.pause();
     audioTrack.currentTime = 0;
     audioTrack.play();
@@ -100,7 +101,7 @@ button4.addEventListener("click", function() {
 });
 
 button5.addEventListener("click", function() {
-    reasign("./assets/images/sunrise.jpg","./assets/audio/sunrise.mp3", "Sun setting on a lake", "button5", "Sun Setting");
+    reasign("./assets/images/sunrise.jpg","./assets/audio/sunrise.mp3", "Sun setting on a lake", "button5", "Sun Setting");//calls reasign to set variables to this buttons
     audioTrack.pause();
     audioTrack.currentTime = 0;
     audioTrack.play();
@@ -109,7 +110,7 @@ button5.addEventListener("click", function() {
 });
 
 button6.addEventListener("click", function() {
-    reasign("./assets/images/police.jpg","./assets/audio/police.mp3", "Police car", "button6", "Police Siren");
+    reasign("./assets/images/police.jpg","./assets/audio/police.mp3", "Police car", "button6", "Police Siren");//calls reasign to set variables to this buttons
     audioTrack.pause();
     audioTrack.currentTime = 0;
     audioTrack.play();
@@ -118,7 +119,7 @@ button6.addEventListener("click", function() {
 });
 
 button7.addEventListener("click", function() {
-    reasign("./assets/images/crystal.jpg","./assets/audio/crystal.mp3", "Blue crystal", "button7", "Futuristic Crystal");
+    reasign("./assets/images/crystal.jpg","./assets/audio/crystal.mp3", "Blue crystal", "button7", "Futuristic Crystal");//calls reasign to set variables to this buttons
     audioTrack.pause();
     audioTrack.currentTime = 0;
     audioTrack.play();
@@ -127,7 +128,7 @@ button7.addEventListener("click", function() {
 });
 
 button8.addEventListener("click", function() {
-    reasign("./assets/images/thunder.jpg","./assets/audio/thunder.mp3", "Lightning in a storm", "button8", "Lightning");
+    reasign("./assets/images/thunder.jpg","./assets/audio/thunder.mp3", "Lightning in a storm", "button8", "Lightning");//calls reasign to set variables to this buttons
     audioTrack.pause();
     audioTrack.currentTime = 0;
     audioTrack.play();
@@ -136,7 +137,7 @@ button8.addEventListener("click", function() {
 });
 
 button9.addEventListener("click", function() {
-    reasign("./assets/images/techPiano.jpg","./assets/audio/techPiano.mp3", "Clear piano", "button9", "Dramatic Music");
+    reasign("./assets/images/techPiano.jpg","./assets/audio/techPiano.mp3", "Clear piano", "button9", "Dramatic Music");//calls reasign to set variables to this buttons
     audioTrack.pause();
     audioTrack.currentTime = 0;
     audioTrack.play();
@@ -145,7 +146,7 @@ button9.addEventListener("click", function() {
 });
 
 button10.addEventListener("click", function() {
-    reasign("./assets/images/helicopter.jpg","./assets/audio/helicopter.mp3", "Helicopter flying", "button10", "Helicopter");
+    reasign("./assets/images/helicopter.jpg","./assets/audio/helicopter.mp3", "Helicopter flying", "button10", "Helicopter");//calls reasign to set variables to this buttons
     audioTrack.pause();
     audioTrack.currentTime = 0;
     audioTrack.play();
@@ -154,7 +155,7 @@ button10.addEventListener("click", function() {
 });
 
 button11.addEventListener("click", function() {
-    reasign("./assets/images/deepOcean.jpg","./assets/audio/deepOcean.mp3", "Jellyfish", "button11", "Jellyfish Swimming");
+    reasign("./assets/images/deepOcean.jpg","./assets/audio/deepOcean.mp3", "Jellyfish", "button11", "Jellyfish Swimming");//calls reasign to set variables to this buttons
     audioTrack.pause();
     audioTrack.currentTime = 0;
     audioTrack.play();
@@ -163,7 +164,7 @@ button11.addEventListener("click", function() {
 });
 
 button12.addEventListener("click", function() {
-    reasign("./assets/images/explosion.jpg","./assets/audio/explosion.mp3", "Nuclear bomb mushroom cloud", "button12", "Explosion");
+    reasign("./assets/images/explosion.jpg","./assets/audio/explosion.mp3", "Nuclear bomb mushroom cloud", "button12", "Explosion");//calls reasign to set variables to this buttons
     audioTrack.pause();
     audioTrack.currentTime = 0;
     audioTrack.play();
@@ -171,34 +172,34 @@ button12.addEventListener("click", function() {
     changeText();
 });
 
-buttonPlay.addEventListener("click", function() {
-    audioTrack.pause();
-    audioTrack.play();
+buttonPlay.addEventListener("click", function() { //runs when the play button is pressed
+    audioTrack.pause(); //pauses audio to ensure audio is paused and not resarted
+    audioTrack.play(); //plays the paused audio
 });
 
-buttonPause.addEventListener("click", function(){
-    audioTrack.pause();
+buttonPause.addEventListener("click", function(){ //runs when the pause button is pressed
+    audioTrack.pause(); //pauses the current audio
 });
 
 buttonStop.addEventListener("click", function (){
-    audioTrack.pause();
-    audioTrack.currentTime = 0;
+    audioTrack.pause(); //pauses the audio to stop it from playing after reset
+    audioTrack.currentTime = 0; //resets the audio to time 0
 });
 
-function changeImage (){
+function changeImage (){// makes all changes to images that are displayed
     
     //console.log(currentCard.getAttribute("border-color"));
 
-    let currentImage = document.querySelector(`.cardImage[src='${localStorage.getItem("image")}']`);
-    let images = document.querySelectorAll('img')
+    let currentImage = document.querySelector(`.cardImage[src='${localStorage.getItem("image")}']`); //gets the HTML Element of the current audio image in the below button section
+    let images = document.querySelectorAll('img') //gets all HTML elements that are of tag img in the lower button section and assigns them to an array call images
     
-    images.forEach(img => img.style.backgroundColor = "#092b46")
-    mainImage.setAttribute("src", localStorage.getItem("image"));
-    currentImage.style.backgroundColor = "red";
-    mainImage.setAttribute("alt", localStorage.getItem("altText"));
+    images.forEach(img => img.style.backgroundColor = "#092b46") // for each element of the array set the background color to #092b46
+    mainImage.setAttribute("src", localStorage.getItem("image")); //sets main image to the currinet image in local storage
+    currentImage.style.backgroundColor = "red"; //sets the background of the selected audios corresponding image to red
+    mainImage.setAttribute("alt", localStorage.getItem("altText")); //sets the alt text of main image to the new alt text in local storage
 }
 
-function changeText(){
-    let text = localStorage.getItem("currentDescription");
-    currentDescription.innerHTML = text;  
+function changeText(){ //changes the text under main image
+    let text = localStorage.getItem("currentDescription"); //gets new description from local storage
+    currentDescription.innerHTML = text;  //displays new description
 }
