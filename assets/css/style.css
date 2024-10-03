@@ -42,7 +42,7 @@ main{
     padding: 20px;    
 }
 
-#buttonPlay, #buttonStop {
+#buttonPlay, #buttonStop, #buttonPause {
 
     border: 2px solid #092b46;
     border-radius: 8px;
@@ -50,7 +50,7 @@ main{
 }
 
 
-#buttonPlay, #buttonStop, #displayTime{
+#buttonPlay, #buttonStop, #displayTime, #buttonPause{
     margin: 20px;
     padding: 20px;
 }
