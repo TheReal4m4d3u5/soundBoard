@@ -50,6 +50,11 @@ This project is a media player that we built to reinforce our knowledge of git, 
     Unit
     Regression 
 
+- [About-Us](#about-Us)
+
+    Avery Jacobson
+    Devan Ballantine
+    
 ## Installation
 
 N/A
@@ -187,13 +192,13 @@ Given a user has launched the url is a mobile browser
 When the user lands on the webpage
 Then the UI should be able to be dynamic, flexable, and reactive without defects 
 
+## About-Us
 
+Avery Jacobson
 
+put text here
 
+Devan Ballantine
 
-
-
-
-
-
+put text here
 
