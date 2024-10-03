@@ -196,7 +196,7 @@ Then the UI should be able to be dynamic, flexable, and reactive without defects
 
 Avery Jacobson
 
-put text here
+I am an accomplished software engineer. I grew up in Edina and graduated from Edina High School. I have three associate degree, two computer science and an electrical engineering degree. I have been working as a software engineer for the last ten years in automation. I have worked on embedded systems, medical devices, criticail fight control systems and brokerage applications. I also play guitar, piano and trumpet and have been playing instruments for over 30 years. 
 
 Devan Ballantine
 
