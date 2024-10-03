@@ -3,6 +3,7 @@ body {
     margin: 0px;
 }
 
+/* formating for all img elements */
 img {
     width: 350px;
     height: 250px;
@@ -12,22 +13,19 @@ img {
     background-color: #092b46;
 }
 
+/* formatting for all button elements*/
 button {
     border: 2px NONE #092b46;
     border-radius: 8px;
-    background-color: #4c7273;
-   
+    background-color: #4c7273;  
 }
 
-
-
-
+/* background color to the main page background */
 main{
-    
     background: #86b9b0;
 }
 
-
+/* formatting for top container */
 #topSection{
 
     border-bottom-style: none;
@@ -36,12 +34,13 @@ main{
     border-top-style: solid;
 }
 
-
+/* formatting for cards that are buttons and images */
 #card {
     margin: 20px;
     padding: 20px;    
 }
 
+/* formatting for play, pause, stop buttons */
 #buttonPlay, #buttonStop, #buttonPause {
 
     border: 2px solid #092b46;
@@ -49,7 +48,7 @@ main{
     background-color: #d0d6d6;
 }
 
-
+/* formatting for play, pause, stop buttons plus the displayTime */
 #buttonPlay, #buttonStop, #displayTime, #buttonPause{
     margin: 20px;
     padding: 20px;
@@ -60,11 +59,13 @@ main{
     border-color: red;
 }
 
+/* overwriting bootstrap padding */
 .container-fluid {
     padding-right: 0px;
     padding-left: 0px;
 }
 
+/* adding my own formatting along with bootstrap container */
 .myContainer {
     display: flex;
     flex-wrap: wrap;
@@ -85,11 +86,13 @@ main{
     height: 250px;
 }
 
+/* centers current song text */
 #currentSong {
     text-align: center;
 }
 
-
+/* centers modal header text */
 .modal-title{
     text-align: center;
 }
+
