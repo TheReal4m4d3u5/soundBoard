@@ -56,21 +56,21 @@ N/A
 
 ## Usage
 
-Open URL for the website
+Stop audio file
 
-![ScreenShot](.png)
+![ScreenShot](./assets/images/clickStop.png)
 
-Close modal
+Pause audio file
 
-![ScreenShot](.png)
+![ScreenShot](./assets/images/clickPause.png)
 
 Play audio file
 
-![ScreenShot]( .png)
+![ScreenShot](./assets/images/clickPlay.png)
 
 Select a new audio file 
 
-![ScreenShot]( .png)
+![ScreenShot](./assets/images/clickAudio.png)
 
 
 ## Credits
