@@ -2,13 +2,13 @@
 
 ## Description
 
-- This project executes developer practices and habits in creating an application with accompanied relevant documentation. It is our motivation that we want to improve our skills as developers so that we can expand our professional abilies. In building this project we can learn best practices and optimize my skills as a professional while understanding new 
-developer tools such as html, css, javascript and github. This project creates a web page that has a set of audio files with associated images that are able to play when the user clicks on one of the images with one audio file and image pre loaded. 
+- This project executes developer practices and habits in creating an application with accompanied relevant documentation. It is our motivation that we want to improve our skills as developers so that we can expand our professional abilies. In building this project we can learn best practices and optimize our skills as a professional while understanding new 
+developer tools such as html, css, javascript and github. With this project we created a web page that has a set of audio files with associated images that are able to play when the user clicks on one of the images with one audio file and image pre loaded. There is a modal that describes what the pages does when you first go to the site or you can click the about butten to see the explaintion of the page again. 
 
 
-- In doing this project I have learned how to think like a developer and practice developer habits by learning how to set up a web development project and how to track my changes and development in a version tracking tool. I followed a process of creating and closing issues in github and creating documentation for my application. There were a number of tech stacks that were used in this project such as html-HTML, CSS and Javascript. Github was used for the version control tool which has all the branch repositories, open and closed issues, and logs to saved changes. It also includes a professional readme, showing installation of my app, how to use it, license, features, how to contribute and how to test the application.  
+- In doing this project we have learned how to think like a developer and practice developer habits by learning how to set up a web development project and how to track our changes and development in a version tracking tool. We followed a process of creating and closing issues in github and creating documentation for my application. There were a number of tech stacks that were used in this project such as html-HTML, CSS and Javascript. Github was used for the version control tool which has all the branch repositories, open and closed issues, and logs to saved changes. It also includes a professional readme, showing installation of my app, how to use it, license, features, how to contribute and how to test the application.  
 
-- Throught this project I learned professional practices and habits, new technologies and how to deploy my app and made app live on the internet for everyone to see and contribute to.  
+- Throught this project we have learned professional practices and habits, new technologies and how to deploy my app and made app live on the internet for everyone to see and contribute to.  
 
 -  This project is a media player that we built to reinforce our knowledge of git, HTML, CSS, and Java Script. It is reactive to different screen sizes and to user input. This project allows users to play commonly used sound effects. 
 
