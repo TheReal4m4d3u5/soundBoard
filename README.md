@@ -200,10 +200,18 @@ And the audio plays when button is pressed
 And card get highlighted when button is pressed 
 And image is shown in the main image
 
-
 Given a user has launched the url is a mobile browser
 When the user lands on the webpage
 Then the UI should be able to be dynamic, flexable, and reactive without defects 
+
+Given a user has launched the url is a mobile browser
+When the user lands on the webpage
+And tries to move the screen left, right or scale with thier fingers
+Then the UI should not break and go back to original 
+
+
+
+
 
 ## About-Us
 
