@@ -1,3 +1,13 @@
+/* create custom CSS variables aka custom properties and apply them to the root of the page, making them accessible to all other CSS */
+:root {
+
+    --darkBlue: #092b46;
+    --teal: #4c7273;
+    --offWhite: #d0d6d6;
+    --lightGreen: #86b9b0;
+    --lightGrey: #d0d6d6;
+  }
+
 body {
 
     margin: 0px;
@@ -10,22 +20,22 @@ body {
 img {
     width: 350px;
     height: 250px;
-    border: 2px solid #092b46;
+    border: 2px solid var(--darkBlue);
     border-radius: 8px;
     padding: 3PX;
-    background-color: #092b46;
+    background-color: var(--darkBlue);
 }
 
 /* formatting for all button elements*/
 button {
-    border: 2px NONE #092b46;
+    border: 2px NONE var(--darkBlue);
     border-radius: 8px;
-    background-color: #4c7273;  
+    background-color: var(--teal);  
 }
 
 /* background color to the main page background */
 main{
-    background: #86b9b0;
+    background: var(--lightGreen);
 }
 
 /* formatting for top container */
@@ -52,9 +62,9 @@ main{
 /* formatting for play, pause, stop buttons */
 #buttonPlay, #buttonStop, #buttonPause, #about {
 
-    border: 2px solid #092b46;
+    border: 2px solid var(--darkBlue);
     border-radius: 8px;
-    background-color: #d0d6d6;
+    background-color: var(--lightGrey);
 }
 
 /* formatting for play, pause, stop buttons plus the displayTime */
@@ -63,10 +73,7 @@ main{
     padding: 20px;
 }
 
-.redBoarder {
 
-    border-color: red;
-}
 
 /* overwriting bootstrap padding */
 .container-fluid {
@@ -79,10 +86,10 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: #4c7273;
+    background-color: var(--teal);
     border-style: solid;
     
-    border: 3px solid #092b46;
+    border: 3px solid var(--darkBlue);
     border-radius: 8px;
 
     margin: 20px;
