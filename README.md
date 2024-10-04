@@ -6,11 +6,11 @@
 developer tools such as html, css, javascript and github. This project creates a web page that has a set of audio files with associated images that are able to play when the user clicks on one of the images with one audio file and image pre loaded. 
 
 
-In doing this project I have learned how to think like a developer and practice developer habits by learning how to set up a web development project and how to track my changes and development in a version tracking tool. I followed a process of creating and closing issues in github and creating documentation for my application. There were a number of tech stacks that were used in this project such as html-HTML, CSS and Javascript. Github was used for the version control tool which has all the branch repositories, open and closed issues, and logs to saved changes. It also includes a professional readme, showing installation of my app, how to use it, license, features, how to contribute and how to test the application.  
+- In doing this project I have learned how to think like a developer and practice developer habits by learning how to set up a web development project and how to track my changes and development in a version tracking tool. I followed a process of creating and closing issues in github and creating documentation for my application. There were a number of tech stacks that were used in this project such as html-HTML, CSS and Javascript. Github was used for the version control tool which has all the branch repositories, open and closed issues, and logs to saved changes. It also includes a professional readme, showing installation of my app, how to use it, license, features, how to contribute and how to test the application.  
 
-Throught this project I learned professional practices and habits, new technologies and how to deploy my app and made app live on the internet for everyone to see and contribute to.  
+- Throught this project I learned professional practices and habits, new technologies and how to deploy my app and made app live on the internet for everyone to see and contribute to.  
 
-This project is a media player that we built to reinforce our knowledge of git, HTML, CSS, and Java Script. It is reactive to different screen sizes and to user input. This project allows users to play commonly used sound effects. 
+-  This project is a media player that we built to reinforce our knowledge of git, HTML, CSS, and Java Script. It is reactive to different screen sizes and to user input. This project allows users to play commonly used sound effects. 
 
 ## link to soundboard
 
@@ -159,6 +159,12 @@ Then a webpage is shown with teal background behind a container
 
 Given a user has launched the url 
 When the user lands on the webpage
+And clicks the About button
+Then a pop-up modal should be shown with following text:
+"Click on an image in the bottom container to load and play a sound clip, the first audio has already been pre loaded for your convenience!"
+
+Given a user has launched the url 
+When the user lands on the webpage
 Then a webpage is shown with a container on the top of the page
 And has a blue background
 And has a play button
@@ -203,7 +209,7 @@ Then the UI should be able to be dynamic, flexable, and reactive without defects
 
 Avery Jacobson
 
-I am an accomplished software engineer. I grew up in Edina and graduated from Edina High School. I have three associate degree, two computer science and an electrical engineering degree. I have been working as a software engineer for the last ten years in automation. I have worked on embedded systems, medical devices, criticail fight control systems and brokerage applications. I also play guitar, piano and trumpet and have been playing instruments for over 30 years. 
+I am an accomplished software engineer. I grew up in Edina and graduated from Edina High School. I have three associate degree, two computer science and an electrical engineering degree. I have been working as a software engineer for the last ten years as a software development engineer in test (sdet). I have worked on embedded systems, medical devices, criticail fight control systems, 3D printers and brokerage applications. I also play guitar, piano and trumpet and have been playing instruments for over 30 years. I have a whoodle named Wolfgang 🐶. 
 
 Devan Ballantine
 
